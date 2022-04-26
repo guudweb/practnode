@@ -1,0 +1,26 @@
+<%- include('template/cabecera', {tituloweb:'PatatasWeb mascotas'} ) %>
+<table>
+    <tr>
+      <th>#id</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Action</th>
+    </tr>
+
+    <% if (arrayMascotas.length > 0) { %>
+        <% arrayMascotas.forEach(mascota => { %>
+            
+            <tr>
+                <th scope="row"><%= mascota.id %> </th>
+                <td><%= mascota.nombre %></td>
+                <td><%= mascota.descripcion %></td>
+                <td>accion</td>
+            </tr>
+        
+        <% }) %>
+    <% } %>
+
+</table>
+
+<%- include('template/footer') %>
+
