@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/898a828438.js" crossorigin="anonymous"></script>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Montserrat:wght@300&family=Noto+Sans&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Montserrat:wght@300&family=Noto+Sans&family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos/aporteplegablestile.css">
+    
+    <title>PatatasWeb Aporte</title>
+</head>
+<body>
+    <header>
+        <div id="brand"><a href="index.html"><h2>PatatasWeb<span> Aportar</span></h2></a></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="poemasweb.html">POEMAS</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="poemasweb.html">POEMAS</a></li>
+          </ul>
+        </div>
+      </header>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+
+      <div class="icoytextoorden">
+
+        <div class="icoariba">
+          <img src="icons/cooker-svgrepo-com.svg" alt="">
+        </div>
+          <div class="textoabajo">
+            <p>Envía una Receta aquí</p>
+          </div> 
+      </div>
+
+   
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="registration-form">
+          <form name="recetas" netlify>
+              <p>Nombre de la Receta</p>
+              <input type="text" name="nombre de la receta" placeholder="nombre de la receta">
+              <p>Descripcion de la Receta</p>
+              <input type="text" name="descripcion de la receta" placeholder="descripcion de la receta">
+              <p>Ingredientes de la Receta</p>
+              <textarea name="Ingredientes de la receta" id="Ingredientes de la receta" placeholder="separa los ingredientes con una comma," cols="30" rows="5"></textarea>
+              <p>Preparacion de la Receta</p>
+              <textarea name="preparacion de la receta" id="preparacion de la receta"  placeholder="la buena receta aqui lenguaje sencillo no somos chefs pro" cols="30" rows="10"></textarea>
+              <p>Imagen del plato</p>
+              <input type = "file" class="enviar" name = "fileupload" accept = "image/*" /> <br>
+              <br>
+              <button class="button-36" type="submit">Enviar Receta</button>
+          </form>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <div class="icoytextoorden">
+
+        <div class="icoariba">
+          <img src="icons/add-svgrepo-com.svg" alt="">
+        </div>
+          <div class="textoabajo">
+            <p>Envía Curiosidades Aquí</p>
+          </div> 
+      </div>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="registration-form">
+          <form name="Curiosidades" netlify>
+              <p>Titulo</p>
+              <input type="text" name="titulo curiosidad" placeholder="titulo aqui">
+
+              <p>Curiosidad entera</p>
+              <textarea name="curiosidad entera" id="curiosidad" placeholder="te leo," cols="30" rows="5">
+
+              </textarea><br>
+
+              <input type = "file" class="enviar" name = "fileupload" accept = "image/*" /> <br>
+              <br>
+              <button class="button-36" type="submit">Enviar Dato</button>
+          </form></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+
+      <div class="icoytextoorden">
+
+        <div class="icoariba">
+          <img src="icons/review-svgrepo-com.svg" alt="">
+        </div>
+          <div class="textoabajo">
+            <p>Enviar Surgerencia</p>
+          </div> 
+      </div>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="registration-form">
+          <form name="sugerencia" netlify>
+              <p>Titulo</p>
+              <input type="text" name="titulode la sugerencia" placeholder="titulo">
+
+              <p>Sugerencia en Detalle</p>
+              <textarea name="sugerencia" id="sugerencia" placeholder="te escucho," cols="30" rows="5">
+
+              </textarea>
+                <br>
+              <button class="button-36" type="submit">Enviar</button>
+          </form>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+
+      <div class="icoytextoorden">
+
+        <div class="icoariba">
+          <img src="icons/note-svgrepo-com.svg" alt="">
+        </div>
+          <div class="textoabajo">
+            <p>Envía un Poema</p>
+          </div> 
+      </div>
+
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="registration-form">
+          <form name="poema" netlify>
+              <p>TITULO</p>
+              <input type="text" name="Titulo" placeholder="titulo">
+
+              <p>Poesia</p>
+              <textarea name="poesia" id="poesia" placeholder="estoy atento," cols="30" rows="15">
+
+              </textarea>
+              <p>nombre del poeta</p>
+              <input type="text" name="Titulo" placeholder="nombre">
+
+              <br>
+              <button class="button-36" type="submit">Enviar Obra</button>
+          </form>    </div>
+    </div>
+  </div>
+ <!-- <div class="accordion-item">
+    <div class="accordion-item-header">
+      Envia gente a invadir polonia
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="registration-form">
+          <form name="recetas" netlify>
+              <p>Nombre de la Receta</p>
+              <input type="text" name="nombre de la receta" placeholder="nombre de la receta">
+              <p>Descripcion de la Receta</p>
+              <input type="text" name="descripcion de la receta" placeholder="descripcion de la receta">
+              <p>Ingredientes de la Receta</p>
+              <textarea name="Ingredientes de la receta" id="Ingredientes de la receta" placeholder="separa los ingredientes con una comma," cols="30" rows="5"></textarea>
+              <p>Preparacion de la Receta</p>
+              <textarea name="preparacion de la receta" id="preparacion de la receta"  placeholder="la buena receta aqui lenguaje sencillo no somos chefs pro" cols="30" rows="10"></textarea>
+              <p>Imagen de plato</p>
+              <input type = "file" class="enviar" name = "fileupload" accept = "image/*" /> <br>
+              <button class="button-36" type="submit">Enviar Receta</button>
+          </form>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<script src="js/navresp.js"></script>
+<script src="js/cuidadoconlaspapasjav.js"> defer</script>
+</body>
+</html>
