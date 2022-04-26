@@ -34,7 +34,11 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
-    
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../images/oc-gonzalez-xg8z_KhSorQ-unsplash.jpg);
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
 }
