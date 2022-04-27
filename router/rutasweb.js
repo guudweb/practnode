@@ -25,9 +25,7 @@ router.get('/patatassabermas', (req, res)=>{
     res.render("patatassabermas");
 })
 
-router.get('/poemasweb', (req, res)=>{
-    res.render("poemasweb");
-})
+
 
 
 module.exports = router;
