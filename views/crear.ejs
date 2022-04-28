@@ -1,0 +1,23 @@
+<%- include('template/cabecera', {tituloweb : "crear" }) %>
+
+  <div class="registration-form">
+    <form action="/poemasweb" method="post">
+  
+      <input type="text" name="titulo" placeholder="TITULO"> <br>
+      <br>
+  
+      <textarea name="texto" id="poesia" placeholder="Escirbe aqui tu poema" cols="30" rows="15">
+</textarea> <br>
+  
+      <input type="text" name="autor" placeholder="Autor del poema"> <br>
+  
+      <br>
+      <button class="button-36" type="submit">Enviar Obra</button>
+    </form>
+  </div>
+
+  </body>
+
+  <%- include('template/footer') %>
+
+    </html>

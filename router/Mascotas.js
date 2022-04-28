@@ -21,4 +21,9 @@ router.get('/', async (req, res) => {
     
 })
 
+
+router.get('/crear', (req, res)=>{
+    res.render('crear')
+})
+
 module.exports = router;
